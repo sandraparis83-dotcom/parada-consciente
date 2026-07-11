@@ -22,4 +22,10 @@ button{
     border-radius:30px;
     font-size:18px;
     cursor:pointer;
+}#circulo{
+    width:120px;
+    height:120px;
+    background:#2F5A2D;
+    border-radius:50%;
+    margin:40px auto;
 }
