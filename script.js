@@ -23,6 +23,8 @@ boton.onclick = function () {
 
     }, 4000);
 
+};
+
 
 
     
