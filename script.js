@@ -21,9 +21,9 @@ boton.onclick = function () {
 
         inhalando = !inhalando;
 
-    }, 2000);
+    }, 4000);
 
-};
+
 
     
 
