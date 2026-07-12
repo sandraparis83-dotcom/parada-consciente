@@ -14,7 +14,7 @@ boton.onclick = function () {
     circulo.innerHTML = "INHALÁ";
     circulo.style.transform = "scale(1.4)";
 
-    setInterval(function () {
+    const respiracion = setInterval(function () {
 
         if (inhalando) {
             circulo.innerHTML = "EXHALÁ";
@@ -36,6 +36,7 @@ boton.onclick = function () {
 
         if (segundos <= 0) {
             clearInterval(reloj);
+            clearInterval(respiracion);
             tiempo.innerHTML = "✔";
             circulo.innerHTML = "✔";
 tiempo.innerHTML = "";
