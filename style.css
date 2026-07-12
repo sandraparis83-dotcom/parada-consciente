@@ -36,3 +36,9 @@ color:white;
 font-weight:bold;
 font-size:18px;}
 box-shadow: 0 0 60px #6BAF5E;
+#tiempo{
+    font-size:32px;
+    font-weight:bold;
+    color:#2F5A2D;
+    margin-bottom:20px;
+}
