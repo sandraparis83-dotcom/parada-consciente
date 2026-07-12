@@ -37,7 +37,8 @@ boton.onclick = function () {
         if (segundos <= 0) {
             clearInterval(reloj);
             tiempo.innerHTML = "✔";
-            circulo.innerHTML = "¡Muy bien!";
+            circulo.innerHTML = "✔";
+alert("¡Excelente! Tu cuello está listo para continuar el viaje.");
         }
 
     }, 1000);
