@@ -8,15 +8,16 @@ boton.onclick = function () {
     let inhalando = true;
 
     circulo.innerHTML = "INHALÁ";
+    circulo.style.transform = "scale(1.4)";
 
     setInterval(function () {
 
         if (inhalando) {
-            circulo.style.transform = "scale(1.4)";
-            circulo.innerHTML = "INHALÁ";
-        } else {
-            circulo.style.transform = "scale(1)";
             circulo.innerHTML = "EXHALÁ";
+            circulo.style.transform = "scale(1)";
+        } else {
+            circulo.innerHTML = "INHALÁ";
+            circulo.style.transform = "scale(1.4)";
         }
 
         inhalando = !inhalando;
