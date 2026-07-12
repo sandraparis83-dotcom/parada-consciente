@@ -7,7 +7,7 @@ boton.onclick = function () {
     boton.style.display = "none";
 
     let inhalando = true;
-    let segundos = 10;
+    let segundos = 90;
 
     actualizarTiempo();
 
