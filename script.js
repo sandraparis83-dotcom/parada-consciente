@@ -40,7 +40,7 @@ function iniciarRespiracion() {
             circulo.innerHTML = "✔";
             tiempo.innerHTML = "";
             boton.style.display = "inline-block";
-            boton.innerHTML = "Volver al ebook";
+            boton.innerHTML = boton.innerHTML = "Volver al ebook<br><small style='font-weight:normal;font-size:13px;'>Tocá ⬅ atrás para volver</small>";
             boton.onclick = function () {
                 history.back();
             };
