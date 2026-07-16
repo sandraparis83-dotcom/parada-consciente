@@ -2,7 +2,7 @@ const boton = document.querySelector("button");
 const circulo = document.getElementById("circulo");
 const tiempo = document.getElementById("tiempo");
 
-boton.onclick = function () {
+function iniciarRespiracion() {
 
     boton.style.display = "none";
 
@@ -37,11 +37,13 @@ boton.onclick = function () {
         if (segundos <= 0) {
             clearInterval(reloj);
             clearInterval(respiracion);
-            tiempo.innerHTML = "✔";
             circulo.innerHTML = "✔";
-tiempo.innerHTML = "";
-boton.style.display = "inline-block";
-boton.innerHTML = "Volver al ebook";
+            tiempo.innerHTML = "";
+            boton.style.display = "inline-block";
+            boton.innerHTML = "Volver al ebook";
+            boton.onclick = function () {
+                history.back();
+            };
         }
 
     }, 1000);
@@ -54,8 +56,9 @@ boton.innerHTML = "Volver al ebook";
 
         tiempo.innerHTML = min + ":" + seg;
     }
+}
 
-};
+boton.onclick = iniciarRespiracion;
 
 
 
